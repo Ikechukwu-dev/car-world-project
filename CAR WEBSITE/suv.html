@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUVs | Car World</title>
+    <style>
+        /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: #FFD700;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('https://media.istockphoto.com/id/458250423/photo/red-range-rover-evoque-2012-front-view.jpg?s=612x612&w=0&k=20&c=zV80luuv0xh_RAdHYogsFpvZcSlyDvkKbX-XCHgpVhM=') no-repeat center center/cover;
+    color: #FFD700;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 600px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.car-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.car-item {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.car-item:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #003366;
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .car-examples {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .car-item {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>SUVs</h1>
+            <nav>
+                <ul>
+                    <li><a href="#examples">Examples</a></li>
+                    <li><a href="car.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2 style="color: #FFD700;">The Power and Versatility of SUVs</h2>
+            <p style="color: #FFD700;">Explore the world of SUVs, where capability meets comfort.</p>
+        </div>
+    </section>
+
+    <!-- About SUVs Section -->
+    <section id="about" class="container">
+        <h2>What Are SUVs?</h2>
+        <p>SUVs (Sport Utility Vehicles) are versatile vehicles that combine the characteristics of a road-going passenger car with features from off-road vehicles. SUVs are known for their higher ground clearance, robust build, and spacious interiors, making them ideal for both urban driving and off-road adventures.</p>
+    </section>
+
+    <!-- SUV Examples Section -->
+    <section id="examples" class="container">
+        <h2>Examples of SUVs</h2>
+        <div class="car-examples">
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR21wAHKYwoSp8h9s5vXIMN4h_RWg1FiKNz4A&s" 
+                alt="Toyota Land Cruiser">
+                <h3>Toyota Land Cruiser</h3>
+                <p>The Toyota Land Cruiser is a legendary off-road vehicle, known for its durability, reliability, and go-anywhere capability.</p>
+            </div>
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKWR3KcO6WZkr0TIKcYCsXfAw28Kw7BtaKDQ&s" 
+                alt="Jeep Grand Cherokee">
+                <h3>Jeep Grand Cherokee</h3>
+                <p>The Jeep Grand Cherokee offers a blend of luxury and rugged capability, making it a top choice for those who need performance both on and off the road.</p>
+            </div>
+            <div class="car-item">
+                <img src="data:image/jpeg;base64,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" 
+                alt="Ford Explorer">
+                <h3>Ford Explorer</h3>
+                <p>The Ford Explorer is a family-friendly SUV with a spacious interior, advanced safety features, and strong towing capacity.</p>
+            </div>
+            <div class="car-item">
+                <img src="data:image/jpeg;base64,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" 
+                alt="Range Rover">
+                <h3>Range Rover</h3>
+                <p>The Range Rover is a luxury SUV that combines opulent comfort with exceptional off-road capability, making it a favorite among the elite.</p>
+            </div>
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyrNAIg5JQAi79CyIEZzUjXnisy_q8t3LNQ&s" 
+                alt="BMW X5">
+                <h3>BMW X5</h3>
+                <p>The BMW X5 is a midsize luxury SUV that offers a dynamic driving experience, advanced technology, and a luxurious interior.</p>
+            </div>
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe1rPgcpaO-wL6blXmllKf9rAhsh2DSte3cg&s" 
+                alt="Mercedes-Benz G-Class">
+                <h3>Mercedes-Benz G-Class</h3>
+                <p>The Mercedes-Benz G-Class, also known as the G-Wagon, is an iconic luxury SUV with a rugged design and powerful performance.</p>
+            </div>
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0xk-sG01l8JF-HB3qbQfKaH2vIwiCg2NWw&s" 
+                alt="Audi Q7">
+                <h3>Audi Q7</h3>
+                <p>The Audi Q7 is a full-size luxury SUV that offers advanced technology, a refined interior, and strong performance capabilities.</p>
+            </div>
+            <div class="car-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5A7_TKeoKD2ynFG29tdCT3PmrX7LcAvCjQ&s" 
+                alt="Honda CR-V">
+                <h3>Honda CR-V</h3>
+                <p>The Honda CR-V is a compact SUV known for its reliability, practicality, and efficient use of space, making it a popular choice among families.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUV Features Section -->
+    <section id="features" class="container">
+        <h2>Features of SUVs</h2>
+        <p>SUVs are designed to provide a balance between comfort, performance, and versatility. Here are some key features that set SUVs apart:</p>
+        <ul>
+            <li><strong>All-Wheel Drive (AWD) or Four-Wheel Drive (4WD):</strong> These systems provide better traction and stability on various terrains, making SUVs suitable for off-road driving.</li>
+            <li><strong>Higher Ground Clearance:</strong> The increased ground clearance of SUVs allows them to navigate rough roads and obstacles with ease.</li>
+            <li><strong>Spacious Interiors:</strong> SUVs typically offer more passenger and cargo space, making them ideal for families and long trips.</li>
+            <li><strong>Towing Capacity:</strong> Many SUVs are equipped with powerful engines and robust frames, enabling them to tow trailers, boats, and other heavy loads.</li>
+            <li><strong>Advanced Safety Features:</strong> Modern SUVs come with a range of safety technologies, such as adaptive cruise control, lane departure warning, and blind-spot monitoring.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Car World. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

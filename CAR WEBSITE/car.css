@@ -1,0 +1,190 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: #FFD700;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#search-bar {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#search-bar input {
+    padding: 8px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#hero {
+    background: url('https://media.istockphoto.com/id/1482810478/photo/a-red-ferrari-458-italia-standing-in-front-of-the-desert-dunes-engine-v8-4-5l-570hp.jpg?s=612x612&w=0&k=20&c=xhq68mYx4Hw1DyJvOL0tpBHHE-l-f4AXYeoMp_0zu6I=') no-repeat center center/cover;    color: #FFD700;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.car-grid, .car-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.car-item {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.car-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.car-item:hover {
+    transform: translateY(-10px);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003366;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+footer {
+    background-color: #003366;
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .car-grid, .car-listing {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #search-bar input {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .car-item {
+        width: 100%;
+    }
+}
